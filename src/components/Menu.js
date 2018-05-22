@@ -18,6 +18,8 @@ export default class Menu extends Component {
                         <Text style={{ color: 'white', fontSize: 16, paddingLeft: 20, paddingTop: 50 }}>Quantidade de devices</Text>
                         </TouchableOpacity>
                         <TouchableOpacity
+                        onPress={() => Actions.mapa()}>
+
                         >
                             <Text style={{ color: 'white', fontSize: 16, paddingLeft: 20, paddingTop: 50 }}>Informações sobre os devices</Text>
                         </TouchableOpacity>

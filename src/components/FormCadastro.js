@@ -8,6 +8,7 @@ import {
     modificaDeviceadd,
     cadastroUsuario
 } from '../actions/AutenticacaoActions';
+import { Actions } from 'react-native-router-flux';
 
 class formCadastro extends Component {
 
@@ -57,6 +58,8 @@ class formCadastro extends Component {
                     </View>
                     <View style={{ flex: 1 }}>
                         <Button title="Cadastrar" color="#fff" onPress={() => this._cadastroUsuario()} />
+                        <Button title="Voltar" color="#fff" onPress={() => Actions.pop()} />
+
                     </View>
                 </View>
             </ImageBackground>

@@ -37,6 +37,7 @@ class AdicionarDevices extends Component {
                                 onPress={() => this._adicionaDevice()}/>
                         <Text style={{ color: '#ff0000', fontSize: 20 }}>
                             {this.props.cadastro_resultado_txt_erro}
+                            
                         </Text>
                     </View>
                 </View>
