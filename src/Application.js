@@ -17,12 +17,12 @@ class Application extends Component {
 
     // Initialize Firebase
     let config = {
-      apiKey: "AIzaSyBskOWUVUPlEJs0PLCp-n_YansWi0ckYo4",
-      authDomain: "projeto-novo-d9b17.firebaseapp.com",
-      databaseURL: "https://projeto-novo-d9b17.firebaseio.com",
-      projectId: "projeto-novo-d9b17",
-      storageBucket: "projeto-novo-d9b17.appspot.com",
-      messagingSenderId: "944462740024"
+      apiKey: "AIzaSyAHskLOIS27lJQWbnwEAd2xOCmJrr3bTKE",
+      authDomain: "tccfirebase-84cb9.firebaseapp.com",
+      databaseURL: "https://tccfirebase-84cb9.firebaseio.com",
+      projectId: "tccfirebase-84cb9",
+      storageBucket: "tccfirebase-84cb9.appspot.com",
+      messagingSenderId: "795670737989"
     };
     firebase.initializeApp(config);
 

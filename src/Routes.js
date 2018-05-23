@@ -7,6 +7,8 @@ import Principal from './components/Principal';
 import FormCadastro from './components/FormCadastro';
 import CadastrarDevices from './components/CadastrarDevices';
 import Mapa from './components/Mapa';
+import Grafico from './components/Grafico';
+
 export default props => (
     <Router>
         <Scene key='root'>
@@ -17,6 +19,8 @@ export default props => (
             <Scene key='principal' component={Principal} title='Principal' hideNavBar={true} />
             <Scene key='cadastrarDevices' component={CadastrarDevices} title='Cadastrar Devices' hideNavBar={true}/>
             <Scene key='mapa' component={Mapa} title='Mapa' hideNavBar={true} />
+            <Scene key='grafico' component={Grafico} title='Grafico' hideNavBar={true} />
+
 
         </Scene>
     </Router>

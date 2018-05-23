@@ -10,6 +10,7 @@ import {
 import { Actions } from 'react-native-router-flux';
 
 import MapView, { ProviderPropType, Marker, AnimatedRegion } from 'react-native-maps';
+import { action } from 'mobx';
 
 const screen = Dimensions.get('window');
 
@@ -28,12 +29,16 @@ class Mapa extends Component {
                 latitude: LATITUDE,
                 longitude: LONGITUDE,
             }),
+            
         };
     }
-
+    
     voltar() {
         Actions.principal();
     }
+    grafico(){
+        Actions.grafico();
+    };
 
     render() {
         return (
@@ -51,6 +56,7 @@ class Mapa extends Component {
                     <Marker
                         ref={marker => { this.marker = marker; }}
                         coordinate={this.state.coordinate}
+                        onPress={() => this.grafico()}
                     />
                 </MapView>
                 <View style={styles.buttonContainer}>
